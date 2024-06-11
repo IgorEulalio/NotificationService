@@ -1,0 +1,51 @@
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Directory for dependencies
+vendor/
+
+# Dependency directories (remove the comment below if you are using Go modules)
+# /vendor/
+
+# Go workspace file
+go.work
+
+# Go modules
+/go.work.sum
+/go.sum
+/go.mod
+
+# Go build artifacts
+bin/
+obj/
+
+# IDE/editor directories and files
+.idea/
+*.swp
+*.swo
+*.bak
+*.tmp
+*.temp
+*.backup
+.vscode/
+*.iml
+
+# Logs
+*.log
+
+# Config files
+.env
+
+# Project-specific
+.DS_Store
+Thumbs.db

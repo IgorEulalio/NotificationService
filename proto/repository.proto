@@ -1,0 +1,31 @@
+syntax = "proto3";
+
+package repository;
+
+option go_package = "github.com/IgorEulalio/notification-service/cmd/grpc";
+
+service RepositoryService {
+  rpc CreateRepository(CreateRepositoryRequest) returns (CreateRepositoryResponse);
+}
+
+message Repository {
+  string name = 1;
+  string owner = 2;
+  Visibility visibility = 3;
+}
+
+enum Visibility {
+  PRIVATE = 0;
+  PUBLIC = 1;
+}
+
+message CreateRepositoryRequest {
+  string name = 1;
+  string owner = 2;
+  string description = 3;
+  Visibility visibility = 4;
+}
+
+message CreateRepositoryResponse {
+  string message = 1;
+}
